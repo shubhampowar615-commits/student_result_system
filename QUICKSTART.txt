@@ -1,0 +1,62 @@
+========================================================================
+STUDENT RESULT MANAGEMENT SYSTEM - COLLEGE MINI-PROJECT
+========================================================================
+
+Technology: Java 21 | Java Swing | SQLite + JDBC | Maven | JUnit 5
+
+------------------------------------------------------------------------
+1. QUICK START (RUN IMMEDIATELY - NO SETUP NEEDED)
+------------------------------------------------------------------------
+Requirements: Java 21 (or compatible JRE/JDK) installed.
+
+- Windows:
+  Double-click "run.bat"
+  OR open Command Prompt / PowerShell in this folder and run:
+      java -jar student-result-system.jar
+
+- Mac / Linux:
+  Run terminal in this folder:
+      chmod +x run.sh
+      ./run.sh
+  OR:
+      java -jar student-result-system.jar
+
+------------------------------------------------------------------------
+2. DEFAULT ADMINISTRATOR CREDENTIALS
+------------------------------------------------------------------------
+  Username : admin
+  Password : admin123
+
+The system comes pre-seeded with sample students, college curriculum
+subjects (Semesters 1-4), and evaluated results so you can test all
+features immediately.
+
+------------------------------------------------------------------------
+3. FEATURES DEMONSTRATION CHECKLIST
+------------------------------------------------------------------------
+[+] Dashboard: Real-time student & result metrics, quick action shortcuts.
+[+] Students: Add, view, edit, delete, search by roll no / name.
+    * Enforces duplicate roll number prevention.
+[+] Subjects: Configure semester subjects, max marks, passing marks, credits.
+    * Has "Reset Sample Defaults" button.
+[+] Marks Entry: Select student & semester -> subject list loads dynamically.
+    * Real-time input validation (0 to max marks).
+    * Absent checkbox for student attendance.
+    * Save Marks & Calculate Result button.
+[+] Results: Search & filter by student, semester, and status.
+    * Strictly separates INCOMPLETE results from FAIL results.
+[+] Report Card: Formal printable statement of marks.
+    * Click "Print Grade Sheet" to open the standard desktop Print Dialog.
+    * Supports physical printers and Microsoft Print to PDF.
+[+] Data Persistence: All records are saved locally in "student_results.db".
+
+------------------------------------------------------------------------
+4. HOW TO BUILD FROM SOURCE USING MAVEN
+------------------------------------------------------------------------
+To compile and run from source:
+  mvn clean test
+  mvn clean package
+  java -jar target/student-result-system.jar
+
+========================================================================
+
